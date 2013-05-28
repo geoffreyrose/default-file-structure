@@ -21,7 +21,7 @@ Now is setup to include a basic Sass setup
 * js/scripts/
 >Put all your unminified scripts here 
 
-* fonts/source_sans_pro -- Put all your fonts here --
+* fonts/
 >Put all your webfonts/icon fonts here
 
 * index.html
