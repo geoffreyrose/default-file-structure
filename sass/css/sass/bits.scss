@@ -1,13 +1,83 @@
-/** Variables **/
+//////////////////////////// Variables ////////////////////////////
 
-/** Mixins **/
+// Variables for Media Queries  
+$i4: 540px;
+$v6: 800px;
+$v8: 1000px;
+$v10: 1200px;
+
+// Variables for Colors  
+$maincolor1: #1fd100;
+$maincolor2: #262626;
 
 
-/** Linking all .scss together **/
+//////////////////////////// Mixins ////////////////////////////
+@mixin trans ($prop, $time) {
+	-webkit-transition: $prop $time;
+	-moz-transition: $prop $time;
+	-ms-transition: $prop $time;
+	-o-transition: $prop $time;
+	transition: $prop $time;
+}
 
-@import 'reset';/** Important reset must go first **/
-@import 'typgraphy';
-@import 'mainstructure';
-@import 'mainnav';
-@import 'header';
-@import 'footer';
+@mixin transform($trans) {
+	-webkit-transform: $trans;
+	-moz-transform: $trans;
+	-ms-transform: $trans;
+	-o-transform: $trans;
+	transform: $trans;
+}
+
+
+// Flexbox Mixins
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flex($values) {
+	-webkit-box-flex: $values;
+	-moz-box-flex:  $values;
+	-webkit-flex:  $values;
+	-ms-flex:  $values;
+	flex:  $values;
+}
+
+@mixin order($val) {
+	-webkit-box-ordinal-group: $val;  
+	-moz-box-ordinal-group: $val;     
+	-ms-flex-order: $val;     
+	-webkit-order: $val;  
+	order: $val;
+}
+
+@mixin flexflow($flowvalue) {
+	-webkit-flex-flow: $flowvalue;
+	-moz-flex-flow: $flowvalue;
+	-ms-flex-flow: $flowvalue;
+	flex-flow: $flowvalue;
+}
+
+@mixin justify($justifyval) {
+	-webkit-justify-content: $justifyval;
+	-moz-justify-content: $justifyval;
+	justify-content: $justifyval;
+}
+@mixin align-self($alignself) {
+	-webkit-align-self: $alignself;
+	-moz-align-self: $alignself;
+	-ms-align-self: $alignself;
+	align-self: $alignself;
+}
+
+@mixin trans ($prop, $time) {
+	-webkit-transition: $prop, $time;
+	-moz-transition: $prop, $time;
+	-ms-transition: $prop, $time;
+	-o-transition: $prop, $time;
+	transition: $prop, $time;
+
+}

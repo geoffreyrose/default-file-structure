@@ -1,29 +1,45 @@
 default-file-structure
 ======================
 
-Basic starting files for a new website
+Basic starting files for a new website project
 
-Now is setup to include a basic Sass setup
+The files include a css reset. Included in the css reset is border-box:
 
-##Include following files
-* css/ 
-> Have your preprocessor save your .css files here
+	*, *:before, *:after {
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
 
-* css/scss/ 
->Put all your .scss files here -- includes sample files
+Don't want this? Remove it from the bottom of the reset.css
 
-* img/
->Put all your images here
 
-* js/ 
->includes jquery 1.9.0 (minified) have your preprocessor save the minified .js here
 
-* js/scripts/
->Put all your unminified scripts here 
+##Basic
 
-* fonts/
->Put all your webfonts/icon fonts here
+###folders
+* /css
+* /fonts
+* /img
+* /js
+* /favicon
+* /index.html
 
-* index.html
-* favicon.ico
+##SASS
+
+* /css
+	>Have your preprocessor save your .css files here
+* /css/sass
+	>Put all your .scss files here -- includes sample files
+* /fonts
+* /img
+* /js
+	>Have your preprocessor save the minified .js here
+* /js/scripts
+	>Put all your unminified scripts here 
+* /favicon
+* /index.html
+
+
+
 
