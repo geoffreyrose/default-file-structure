@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta name="description" content="{{ meta_desc }}">
+		<title>{{ title }}</title>
+		<!-- authorship stuff -->
+		<link rel="author" href="https://plus.google.com/104409603510455570220/about"/>	
+		
+		<!-- CSS -->
+		<!-- The complied sass files, minified, reset already included -->
+		<link rel="stylesheet" type="text/css" href="{{ theme:css src="styles" }}" />
+		
+		<!-- Fav Icon/Apple Touch -->
+		<link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
+		<link rel="apple-touch-icon" href="{{ theme:img src="favicon.png" }}">		
+
+		<!-- Web Fonts -->
+		<link rel="stylesheet" type="text/css" href="{{ theme:css src="webfonts" }}"  />
+		<script type="text/javascript" src="//use.typekit.net/fac4ueh.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<!--[if IE]>
+			<script type="text/javascript" src="{{ theme:js src="respond" }}"></script>
+			<link rel="stylesheet" type="text/css" href="{{ theme:css src="iestyles" }}" />
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+			
+	</head>
+	
+	<body>
+		
+		<header>
+			{{ theme:partial src="mainnav" }}
+		</header>
+		
+		<article>
+			{{ layout_content }}
+		</article>
+
+		{{ theme:partial src="footer" }}
+
+		<!-- Your JS Files Below -->
+		<script type="text/javascript" src="{{ theme:js src="jquery.min" }}"></script>
+		<script type="text/javascript" src="{{ theme:js src="scripts-min" }}"></script>
+
+	</body>
+	
+</html>

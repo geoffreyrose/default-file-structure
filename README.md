@@ -1,6 +1,8 @@
 default-file-structure
 ======================
+##My basic starting files when stating a new website
 
+###Just a starting a point for a site modify as needed
 Basic starting files for a new website project
 
 The files include a css reset. Included in the css reset is border-box:
@@ -44,6 +46,10 @@ Don't want this? Remove it from the bottom of the reset.css
 * /favicon
 * /index.html
 
+
+##Statamic
+
+Basic theme files for starting a [Statamic](http://statamic.com/) Site
 
 
 
