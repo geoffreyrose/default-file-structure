@@ -28,8 +28,6 @@ $maincolor2: #262626;
 	transform: $trans;
 }
 
-
-// Flexbox Mixins
 @mixin flexbox() {
 	display: -webkit-box;
 	display: -moz-box;
@@ -73,11 +71,22 @@ $maincolor2: #262626;
 	align-self: $alignself;
 }
 
-@mixin trans ($prop, $time) {
-	-webkit-transition: $prop, $time;
-	-moz-transition: $prop, $time;
-	-ms-transition: $prop, $time;
-	-o-transition: $prop, $time;
-	transition: $prop, $time;
 
+@mixin cf-1 {
+    content: " ";
+    display: table;
+}
+
+@mixin cf-2 {
+	clear: both;
+}
+
+@mixin cf {
+	&:before {
+		@include cf-1;
+	}
+	&:after {
+		@include cf-1;
+		@include cf-2;
+	}
 }
